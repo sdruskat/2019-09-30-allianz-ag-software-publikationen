@@ -1,10 +1,9 @@
 ---
-title:  'Korpling Example Slides'
-subtitle: 'Some Workshop, April 2019'
+title:  'Die Hard 1.1024.0: backward compatibility of a search engine with persistant IDs'
+subtitle: 'deRSE19, 2019-06-04'
 author: 
-    - 'Author One'
-    - 'Author Two'
-    - 'Author Etc'
+    - 'Thomas Krause'
+    - 'Stephan Druskat'
 theme: 'humboldt'
 center: 'false'
 slideNumber: 'true'
