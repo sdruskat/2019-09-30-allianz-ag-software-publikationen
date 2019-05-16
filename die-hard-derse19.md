@@ -14,13 +14,42 @@ mathjaxurl: "MathJax-release-2.7.4-electron/MathJax.js"
 
 # Background
 
-## Hexatomic
+## The Hexatomic project
 
-XXX
+"A minimal infrastructure for the **sustainable** provision of extensible *multi-layer annotation software for linguistic corpora*"
+
+- Funded under the call "Research Software Sustainability" issued by DFG under grant number GA 1288/11-1 
+- Runs from October 2018 until September 2021.
+
+. . .
+
+- Thomas Krause: computer scientist who slipped into linguistics
+- Stephan Druskat: English major who turned into software developer
+- Both: Research Software Engineers
 
 ## ANNIS and its query language
 
-XXX
+A web browser-based search and visualization architecture for complex
+multilayer *linguistic corpora* with diverse types of *annotation*.
+
+::: {.center .col-container}
+
+::: col
+![](image/annis3_full.png){width=100%}
+:::
+
+::: col
+
+- Annotations are structured information added to text 
+- Used by expert users (linguists) to find and analyze linguistic phenomena
+- ANNIS allows finding annotations and *combinations* of annotations with its domain specific query language AQL
+- Each query returns a set of results, which can be analysed further
+- Part of a collection of tools for linguists: corpus-tools.org
+:::
+
+
+:::
+
 
 ## Semantic Versioning
 
