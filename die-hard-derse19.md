@@ -97,7 +97,7 @@ Some open questions:
 - Who provides and pays the infrastructure?
 
 
-# Achieving backward compatibility in ANNIS 4.x
+# Achieving backward compatibility in ANNIS 4
 
 ## What is the digital object defined by ANNIS citation links?
 
