@@ -117,7 +117,7 @@ All old reference links should still work.
 
 . . . 
 
-Users printed these links in books.
+Users literally printed these links in books.
 
 . . .
 
@@ -158,28 +158,120 @@ Remember me?
 
 ## Formalized semantics of the data model and the query language
 
-XXX
+- In ideal world a query language is formally defined like e.g. Datalog
+- All you need to restore a digital object would be the data and any implementation conforming to the specification
+
+. . . 
+
+::: {.center .large}
+
+Real world: SQL
+
+:::
+
+. . . 
+
+
+- SQL versions have been standardized (..., SQL-93, SQL:1999, SQL:2003, ...)
+- Various implementations (MySQL, PostgreSQL, Oracle, DB2, SQLite, ...) with different support for the standard and vendor extensions
+- Switching database implementations without abstraction layer like ORM not an easy task
+- AQL has only two implementations, but first implementation heavily relied on semantics of SQL and its implementation PostgreSQL
 
 ## Not implemented functions of the query language
 
-XXX
+- A query language can accumulate a large number of features over time
+  - AQL has a large number of binary operators that describe the relation between two nodes in the graph
+- Not all of them are orthogonale to each other an can be replaced
+
+. . .
+
+- Move implementation of such features to a specific code path that separate the “real” query language from the ugly parts
+- Check for actual used PIDs/reference links makes it transparent if a query language features has been used and needs emulation
+
+. . . 
+
+- If too hard to implement:
+
+::: center
+
+![](image/unsupported-query.png){height=200px}
+  
+:::
 
 ## Identifiers might change
 
-XXX 
+- Each node in the graph has an URI and internal identfier
+- Matches are lists of URIs and additional names for the label the match refers to
+- A match is only the same, if all URIs are the same
 
+. . .
+
+People will use weird names
+
+- Spaces, slashes, Umlauts, ...
+- Double percent-escaped characters
+
+. . . 
+
+- Everything Unicode has to offer
+
+::: center
+
+![](image/unicode.png){}
+
+::: tiny
+[https://github.com/minimaxir/big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings)
+:::
+
+:::
+
+$\rightarrow$ Importing data with IDs and comparing them is hard 
 
 ## Regular Expressions
 
-XXX
+Regular expressions are an important part of AQL for matching node and edge labels
+
+. . .
+
+```sql
+-- PostgreSQL
+SELECT * FROM t WHERE a ~ 'val.*';
+-- MySQL 
+SELECT * FROM t WHERE a REGEXP 'val.*';
+```
+- Syntax varies from each implementation, even if „supporting POSIX“
+- Regular expression engines often allow to search for non-regular expressions like backreferences and other extensions: some implementation trade features against speed (e.g RE2 from Google)
+- “Power-Users“ will use all regular features available, even if never officially documented
+
 
 ## String ordering/collation
 
-XXX
+For query results, the order of the results is important, e.g. when refering to matches
+$\rightarrow$ ANNIS 4 reference migration checks order of the matches as well
+
+
+What is the result of the following SQL query?
+```sql
+SELECT '_' < '-';
+```
+
+. . .
+
+- Depends on your localization! `LANG=C` != `LANG=en_US.UTF-8` != `LANG=de_DE.UTF-8`
+- PostgreSQL allows to configure the collation for a column of a table explicitly
+```sql
+CREATE TABLE test1 (a text COLLATE "de_DE");
+```
+
+::: center
+Anyone ever defined their tables this way *before* having collations issues?
+:::
 
 # Conclusion
 
 ## Conclusion
+
+XXX Number of queries ported sucessfully and unsucessfully
 
 XXX
 
