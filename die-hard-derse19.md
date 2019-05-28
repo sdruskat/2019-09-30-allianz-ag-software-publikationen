@@ -271,9 +271,31 @@ Anyone ever defined their tables this way *before* having collations issues?
 
 ## Conclusion
 
-XXX Number of queries ported sucessfully and unsucessfully
+- ANNIS 4 is currently in public beta
+- Users created 12.828 reference links so far on our public ANNIS 3 installation
 
-XXX
+. . .
+
+::: center
+All but 137 queries are known to give the same results in ANNIS 4
+:::
+
+. . . 
+
+
+
+- Issues remaining
+  - Regular Expressions
+  - unsupported binary operators (might not fix)
+  - actual bugs
+
+. . .
+
+- Having these reference links gives us a huge **real world test set**
+- **Automatic migration** for persistent IDs
+- **Transparency** for the **administrator** which queries he can migrate to a new instance
+- **Transparency** for the **end-user** if a query is known not to work, no silent failure
+- We will be able to **retire ANNIS 3** while keeping all these reference links valid
 
 # Appendix
 
