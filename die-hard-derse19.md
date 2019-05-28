@@ -70,12 +70,28 @@ Some open questions:
   - Query language?
   - Data exchange format?
   - User Interface?
-- Do we want to backward-compatible forever? Is there a “1.0” release anxiety?
+- Do we want to backward-compatible forever? *Is there a “1.0” release anxiety*?
 
 
-## Persistant Identifiers (PIDs)
+## Persistent Identifiers (PIDs)
 
-XXX
+
+
+[![DOI](image/doi-annis.svg)](https://doi.org/10.5281/zenodo.1161400)
+
+
+
+- In general: resolving an identifier to a resource (digital or or not)
+- Should not change: you can print it in a book!
+- Several systems exist, like e.g. DOI, handle.net, ...
+
+. . . 
+
+Some open questions:
+
+- If a digital resource moves, who updates the reference?
+- Who provides and pays the infrastructure?
+
 
 # Achieving backward compatibility in ANNIS 4.x
 
