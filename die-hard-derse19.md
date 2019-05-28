@@ -209,7 +209,7 @@ Real world: SQL
 
 People will use weird names
 
-- Spaces, slashes, Umlauts, ...
+- Spaces, slashes, umlauts, ...
 - Double percent-escaped characters
 
 . . . 
