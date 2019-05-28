@@ -159,7 +159,7 @@ Remember me?
 
 ## Formalized semantics of the data model and the query language
 
-- In ideal world a query language is formally defined like e.g. Datalog
+- In an ideal world a query language is formally defined like e.g. Datalog
 - All you need to restore a digital object would be the data and any implementation conforming to the specification
 
 . . . 
