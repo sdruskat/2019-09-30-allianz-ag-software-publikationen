@@ -122,7 +122,7 @@ Users literally printed these links in books.
 
 . . .
 
-Solution 1: keep the old software running forever (parallel to the new one)
+Solution 1: keep the old software running forever (in parallel to the new one)
 
 . . . 
 
