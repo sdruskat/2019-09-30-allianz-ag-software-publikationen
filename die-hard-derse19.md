@@ -29,22 +29,23 @@ mathjaxurl: "MathJax-release-2.7.4-electron/MathJax.js"
 
 ## ANNIS and its query language
 
-A web browser-based search and visualization architecture for complex
-multilayer *linguistic corpora* with diverse types of *annotation*.
+Web browser-based search and visualization architecture for *linguistic corpora* with diverse types of *annotation*. Part of the [corpus-tools.org](http://corpus-tools.org) collection of tools for linguists.
 
 ::: {.center .col-container}
 
 ::: col
+
 ![](image/annis3_full.png){width=100%}
+
 :::
 
 ::: col
 
-- Annotations are structured information added to text 
-- Used by expert users (linguists) to find and analyze linguistic phenomena
-- ANNIS allows finding annotations and *combinations* of annotations with its domain specific query language AQL
-- Each query returns a set of results, which can be analysed further
-- Part of a collection of tools for linguists: corpus-tools.org
+- Annotations are structured information added to text represented as a **graph with labels**
+- Used by expert users (linguists) to **find and analyze linguistic phenomena**
+- ANNIS allows finding annotations and *combinations* of annotations with its domain specific query language AQL:
+  describes **nodes labels** and **joins them with operators**
+- Each query returns a set of results for further automatic/manual analysis
 :::
 
 
@@ -53,7 +54,7 @@ multilayer *linguistic corpora* with diverse types of *annotation*.
 
 ## Semantic Versioning
 
-- Popularized by semver.org [@Preston-Werner]
+- Popularized by [semver.org](https://semver.org/) [@Preston-Werner]
 - Explicit statement about compatibility between versions of API
 - *MAJOR*.*MINOR*.*PATCH*
   - Only bug fixes when *PATCH* changes, API does not change
@@ -103,7 +104,7 @@ Some open questions:
 - ANNIS allows generating short links to query results and single matches, e.g.
 [https://korpling.org/annis3/?id=813c3146-2d10-4d0c-8a1f-1b5efc3c051a](https://korpling.org/annis3/?id=813c3146-2d10-4d0c-8a1f-1b5efc3c051a)
 ![](image/ridges.png)
-- Glorified URL shortener: expands to a longer URL encoding the match and the actual query, e.g. https://korpling.org/annis3/#_q=bm9ybT0vZ8O2bm50Lw&_c=UklER0VTX[...]
+- Glorified URL shortener: expands to a longer URL encoding the match and the actual query paramters, e.g. https://korpling.org/annis3/#_q=bm9ybT0vZ8O2bm50Lw&_c=UklER0VTX[...]
 -  Query is executed each time the link is opened, no result identifers are saved
 
 ## Backward compatibility
@@ -149,12 +150,12 @@ Remember me?
 
 :::
 
-- We need a quirks mode like e.g.
+- We need a quirks mode emulating old behavior like e.g.
   - Internet Explorer
   - Rust Editions ([https://doc.rust-lang.org/book/appendix-05-editions.html](https://doc.rust-lang.org/book/appendix-05-editions.html))
 
 
-# Problems when changing the implementation for a query language
+# Selected problems from the migration process
 
 ## Formalized semantics of the data model and the query language
 
@@ -174,8 +175,8 @@ Real world: SQL
 
 - SQL versions have been standardized (..., SQL-93, SQL:1999, SQL:2003, ...)
 - Various implementations (MySQL, PostgreSQL, Oracle, DB2, SQLite, ...) with different support for the standard and vendor extensions
-- Switching database implementations without abstraction layer like ORM not an easy task
 - AQL has only two implementations, but first implementation heavily relied on semantics of SQL and its implementation PostgreSQL
+- Problems of changing AQL implementations are similar to these **migrating an application from one SQL implementation to another**
 
 ## Not implemented functions of the query language
 
@@ -286,8 +287,8 @@ All but 137 queries are known to give the same results in ANNIS 4
 
 - Issues remaining
   - Regular Expressions
-  - unsupported binary operators (might not fix)
-  - actual bugs
+  - Unsupported binary operators (might not fix)
+  - Actual bugs
 
 . . .
 
