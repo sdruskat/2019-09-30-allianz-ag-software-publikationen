@@ -70,7 +70,10 @@ Some open questions:
   - Query language?
   - Data exchange format?
   - User Interface?
-- Do we want to backward-compatible forever? *Is there a “1.0” release anxiety*?
+
+. . . 
+
+- **Do we want to backward-compatible forever? Is there a “1.0 release anxiety”?**
 
 
 ## Persistent Identifiers (PIDs)
@@ -82,7 +85,7 @@ Some open questions:
 
 
 - In general: resolving an identifier to a resource (digital or or not)
-- Should not change: you can print it in a book!
+- **Should never change**: you can print it in a book!
 - Several systems exist, like e.g. DOI, handle.net, ...
 
 . . . 
@@ -97,17 +100,59 @@ Some open questions:
 
 ## What is the digital object defined by ANNIS citation links?
 
-XXX
+- ANNIS allows generating short links to query results and single matches, e.g.
+[https://korpling.org/annis3/?id=813c3146-2d10-4d0c-8a1f-1b5efc3c051a](https://korpling.org/annis3/?id=813c3146-2d10-4d0c-8a1f-1b5efc3c051a)
+![](image/ridges.png)
+- Glorified URL shortener: expands to a longer URL encoding the match and the actual query, e.g. https://korpling.org/annis3/#_q=bm9ybT0vZ8O2bm50Lw&_c=UklER0VTX[...]
+-  Query is executed each time the link is opened, no result identifers are saved
 
-## Testing each citation link
+## Backward compatibility
 
-XXX
+Problem:
 
-## Quirks Mode
+- ANNIS 3: AQL queries are mapped to SQL queries and executed by PostgreSQL
+- ANNIS 4: custom in-memory graph-based search engine written in Rust, which directly executes AQL [@Krause2019]
 
-XXX other examples of quirks mode (IE, Rust)
+All old reference links should still work.
 
-XXX classes of differences: not supported yet, actual error, old implementation was weird, will never be supported
+. . . 
+
+Users printed these links in books.
+
+. . .
+
+Solution 1: keep the old software running forever (parallel to the new one)
+
+. . . 
+
+**Solution 2: Make sure that each query that has been referenced produces the same result in ANNIS 4 as in ANNIS 3 **
+
+. . . 
+
+- Execute each referenced query on both ANNIS 3 and 4
+- Compare the results
+- If successful: Migrate the links to the new ANNIS 4 installation
+
+
+## Query language incompatibility is a feature
+
+- New version will remove some query language functions and fix bugs in the query execution
+- Backward compatibility means replicating these bugs
+
+. . . 
+
+:::  center
+
+Remember me?
+
+![](image/Internet_Explorer_6_Windows_XP.png)
+
+:::
+
+- We need a quirks mode like e.g.
+  - Internet Explorer
+  - Rust Editions ([https://doc.rust-lang.org/book/appendix-05-editions.html](https://doc.rust-lang.org/book/appendix-05-editions.html))
+
 
 # Problems when changing the implementation for a query language
 
