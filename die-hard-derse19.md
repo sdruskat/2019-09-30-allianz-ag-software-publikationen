@@ -53,7 +53,25 @@ multilayer *linguistic corpora* with diverse types of *annotation*.
 
 ## Semantic Versioning
 
-XXX
+- Popularized by semver.org [@Preston-Werner]
+- Explicit statement about compatibility between versions of API
+- *MAJOR*.*MINOR*.*PATCH*
+  - Only bug fixes when *PATCH* changes, API does not change
+  - Additions to API marked as increase of *MINOR*
+  - Removal and non-backward compatible changes needs an increase in *MAJOR*
+
+. . .
+
+
+Some open questions:
+
+- What is part of the API in a complex piece of software with multiple components? 
+  - REST-API?
+  - Query language?
+  - Data exchange format?
+  - User Interface?
+- Do we want to backward-compatible forever? Is there a “1.0” release anxiety?
+
 
 ## Persistant Identifiers (PIDs)
 
