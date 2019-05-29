@@ -1,9 +1,9 @@
 ---
-title:  'Die Hard 1.1024.0: <br/> Backward compatibility of a search engine with persistant IDs'
+title:  'Die Hard 1.1024.0: <br/> Backward compatibility of a search engine with persistent IDs'
 subtitle: 'deRSE19 - Conference for Research Software Engineers in Germany, 2019-06-04'
 author: 
     - 'Thomas Krause (Humboldt-Universität zu Berlin)'
-    - 'Stephan Druskat (Friedrich-Schiller-Universität Jena, Deutsches Zentrum für Luft- und Raumfahrt)'
+    - 'Stephan Druskat (Friedrich Schiller University Jena, German Aerospace Center (DLR))'
 theme: 'humboldt'
 center: 'false'
 slideNumber: 'true'
@@ -18,18 +18,19 @@ mathjaxurl: "MathJax-release-2.7.4-electron/MathJax.js"
 
 "A minimal infrastructure for the **sustainable** provision of extensible *multi-layer annotation software for linguistic corpora*"
 
-- Funded under the call "Research Software Sustainability" issued by DFG under grant number GA 1288/11-1 
-- Runs from October 2018 until September 2021.
+- Funded under the call "Research Software Sustainability" issued by DFG under grant number GA 1288/11-1
+- Runs from October 2018 until September 2021
+[TODO check fades!]
 
 . . .
 
 - Thomas Krause: computer scientist who slipped into linguistics
-- Stephan Druskat: English major who turned into software developer
+- Stephan Druskat: English M.A. turned software developer & computer scientist
 - Both: Research Software Engineers
 
 ## ANNIS and its query language
 
-Web browser-based search and visualization architecture for *linguistic corpora* with diverse types of *annotation*. Part of the [corpus-tools.org](http://corpus-tools.org) collection of tools for linguists.
+Web browser-based search and visualization architecture for *linguistic corpora* with diverse types of *annotation*. Part of the [corpus-tools.org](http://corpus-tools.org) collection of tools for linguists. [TODO ***WHAT HAVE I SAID ABOUT CITING SOFTWARE 💀🔥🤬***]
 
 ::: {.center .col-container}
 
@@ -59,7 +60,7 @@ Web browser-based search and visualization architecture for *linguistic corpora*
 - *MAJOR*.*MINOR*.*PATCH*
   - Only bug fixes when *PATCH* changes, API does not change
   - Additions to API marked as increase of *MINOR*
-  - Removal and non-backward compatible changes needs an increase in *MAJOR*
+  - Removal and non-backward compatible changes need an increase in *MAJOR*
 
 . . .
 
@@ -67,7 +68,7 @@ Web browser-based search and visualization architecture for *linguistic corpora*
 Some open questions:
 
 - What is part of the API in a complex piece of software with multiple components? 
-  - REST-API?
+  - REST API?
   - Query language?
   - Data exchange format?
   - User Interface?
@@ -85,27 +86,27 @@ Some open questions:
 
 
 
-- In general: resolving an identifier to a resource (digital or or not)
-- **Should never change**: you can print it in a book!
-- Several systems exist, like e.g. DOI, handle.net, ...
+- In general: resolving an identifier to a resource (digital or not)
+- **Should never change**, i.e., you can print it in a book!
+- Several systems exist, e.g. DOI, handle.net, ...
 
 . . . 
 
 Some open questions:
 
 - If a digital resource moves, who updates the reference?
-- Who provides and pays the infrastructure?
+- Who provides and funds the infrastructure?
 
 
 # Achieving backward compatibility in ANNIS 4
 
 ## What is the digital object defined by ANNIS citation links?
 
-- ANNIS allows generating short links to query results and single matches, e.g.
+- ANNIS allows generating short links to query results and single matches, e.g.,
 [https://korpling.org/annis3/?id=813c3146-2d10-4d0c-8a1f-1b5efc3c051a](https://korpling.org/annis3/?id=813c3146-2d10-4d0c-8a1f-1b5efc3c051a)
 ![](image/ridges.png)
-- Glorified URL shortener: expands to a longer URL encoding the match and the actual query paramters, e.g. https://korpling.org/annis3/#_q=bm9ybT0vZ8O2bm50Lw&_c=UklER0VTX[...]
--  Query is executed each time the link is opened, no result identifers are saved
+- Glorified URL shortener: expands to a longer URL encoding the match and the actual query paramters, e.g., https://korpling.org/annis3/#_q=bm9ybT0vZ8O2bm50Lw&_c=UklER0VTX[...]
+-  Query is executed each time the link is opened, no result identifiers are saved
 
 ## Backward compatibility
 
@@ -122,11 +123,11 @@ Users literally printed these links in books.
 
 . . .
 
-Solution 1: keep the old software running forever (in parallel to the new one)
+Solution 1: Keep the old software running forever (in parallel to the new one)
 
 . . . 
 
-**Solution 2: Make sure that each query that has been referenced produces the same result in ANNIS 4 as in ANNIS 3 **
+**Solution 2: Make sure that each query that has been referenced, produces the same result in ANNIS 4 as in ANNIS 3**
 
 . . . 
 
@@ -150,7 +151,7 @@ Remember me?
 
 :::
 
-- We need a quirks mode emulating old behavior like e.g.
+- We need a quirks mode emulating old behavior like, e.g.,
   - Internet Explorer
   - Rust Editions ([https://doc.rust-lang.org/book/appendix-05-editions.html](https://doc.rust-lang.org/book/appendix-05-editions.html))
 
@@ -159,7 +160,7 @@ Remember me?
 
 ## Formalized semantics of the data model and the query language
 
-- In an ideal world a query language is formally defined like e.g. Datalog
+- In an ideal world a query language is formally defined like, e.g., Datalog [TODO what is Datalog]
 - All you need to restore a digital object would be the data and any implementation conforming to the specification
 
 . . . 
@@ -175,19 +176,19 @@ Real world: SQL
 
 - SQL versions have been standardized (..., SQL-93, SQL:1999, SQL:2003, ...)
 - Various implementations (MySQL, PostgreSQL, Oracle, DB2, SQLite, ...) with different support for the standard and vendor extensions
-- AQL has only two implementations, but first implementation heavily relied on semantics of SQL and its implementation PostgreSQL
-- Problems of changing AQL implementations are similar to these **migrating an application from one SQL implementation to another**
+- AQL has only two implementations, but the first implementation heavily relied on semantics of SQL and its [TODO their?] implementation in PostgreSQL
+- Problems of changing AQL implementations are similar to those in **migrating an application from one SQL implementation to another**
 
-## Not implemented functions of the query language
+## Un-implemented functions of the query language
 
-- A query language can accumulate a large number of features over time
+- A query language can accumulate a large number of features over time:
   - AQL has a large number of binary operators that describe the relation between two nodes in the graph
-- Not all of them are orthogonale to each other an can be replaced
+- Not all of them are orthogonal to each other and therefore can be replaced [TODO can or cannot?]
 
 . . .
 
 - Move implementation of such features to a specific code path that separate the “real” query language from the ugly parts
-- Check for actual used PIDs/reference links makes it transparent if a query language features has been used and needs emulation
+- Check for actual used PIDs/reference links to make it transparent if a query language feature has been used, and therefore needs emulation
 
 . . . 
 
@@ -201,9 +202,9 @@ Real world: SQL
 
 ## Identifiers might change
 
-- Each node in the graph has an URI and internal identfier
+- Each node in the graph has a URI and an internal identfier
 - Matches are lists of URIs and additional names for the label the match refers to
-- A match is only the same, if all URIs are the same
+- A match [for a query] is only the same if all URIs are the same
 
 . . .
 
@@ -226,7 +227,7 @@ People will use weird names
 
 :::
 
-$\rightarrow$ Importing data with IDs and comparing them is hard 
+$\rightarrow$ Importing data via IDs -- and comparing them -- is hard 
 
 ## Regular Expressions
 
@@ -241,8 +242,8 @@ SELECT * FROM t WHERE a ~ 'val.*';
 SELECT * FROM t WHERE a REGEXP 'val.*';
 ```
 - Syntax varies from each implementation, even if „supporting POSIX“
-- Regular expression engines often allow to search for non-regular expressions like backreferences and other extensions: some implementation trade features against speed (e.g RE2 from Google)
-- “Power-Users“ will use all regular features available, even if never officially documented
+- Regular expression engines often allow a search for non-regular expressions, such as backreferences and other extensions: some implementations trade features for speed (e.g RE2 from Google)
+- “Power users“ will use all regular features available, even if never officially documented
 
 
 ## String ordering/collation
@@ -265,7 +266,7 @@ CREATE TABLE test1 (a text COLLATE "de_DE");
 ```
 
 ::: center
-Anyone ever defined their tables this way *before* having collations issues?
+Anyone ever defined their tables this way *before* having collation issues?
 :::
 
 # Conclusion
@@ -273,12 +274,12 @@ Anyone ever defined their tables this way *before* having collations issues?
 ## Conclusion
 
 - ANNIS 4 is currently in public beta
-- Users created 12.828 reference links so far on our public ANNIS 3 installation
+- Users created 12.828 reference links so far on *our* public ANNIS 3 installation alone
 
 . . .
 
 ::: center
-All but 137 queries are known to give the same results in ANNIS 4
+All but 137 queries are known to give the same results in ANNIS 4 [TODO is this good or bad?]
 :::
 
 . . . 
@@ -286,7 +287,7 @@ All but 137 queries are known to give the same results in ANNIS 4
 
 
 - Issues remaining
-  - Regular Expressions
+  - Regular expressions
   - Unsupported binary operators (might not fix)
   - Actual bugs
 
