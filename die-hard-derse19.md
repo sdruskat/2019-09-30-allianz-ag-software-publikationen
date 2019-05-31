@@ -184,7 +184,7 @@ Real world: SQL
 
 - A query language can accumulate a large number of features over time:
   - AQL has a large number of binary operators that describe the relation between two nodes in the graph
-- Not all of them are orthogonal to each other and therefore can be replaced [TODO can or cannot?]
+- Orthogonal features can be replaced
 
 . . .
 
@@ -205,7 +205,7 @@ Real world: SQL
 
 - Each node in the graph has a URI and an internal identfier
 - Matches are lists of URIs and additional names for the label the match refers to
-- A match [for a query] is only the same if all URIs are the same
+- A match for a query is only the same if all URIs are the same
 
 . . .
 
