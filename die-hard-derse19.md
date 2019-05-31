@@ -284,7 +284,7 @@ CREATE TABLE test1 (a text COLLATE "de_DE");
 ```
 
 ::: center
-Anyone ever defined their tables this way *before* having collation issues?
+Anyone ever defined their tables this way *before* having collation issues in production?
 :::
 
 # Conclusion
