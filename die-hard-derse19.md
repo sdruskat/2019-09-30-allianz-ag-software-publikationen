@@ -16,7 +16,8 @@ mathjaxurl: "MathJax-release-2.7.4-electron/MathJax.js"
 
 ## The Hexatomic project
 
-"A minimal infrastructure for the **sustainable** provision of extensible *multi-layer annotation software for linguistic corpora*"
+"A minimal infrastructure for the **sustainable** provision of extensible 
+*multi-layer annotation software for linguistic corpora*"
 
 - Funded under the call "Research Software Sustainability" issued by DFG under grant number GA 1288/11-1
 - Runs from October 2018 until September 2021
@@ -29,7 +30,10 @@ mathjaxurl: "MathJax-release-2.7.4-electron/MathJax.js"
 
 ## ANNIS and its query language
 
-Web browser-based search and visualization architecture for *linguistic corpora* with diverse types of *annotation*. Part of the [corpus-tools.org](http://corpus-tools.org) collection of tools for linguists. [@Druskat2016]
+Web browser-based search and visualization architecture for *linguistic corpora* 
+with diverse types of *annotation*. 
+Part of the [corpus-tools.org](http://corpus-tools.org) collection of tools for 
+linguists. [@Druskat2016]
 
 ::: {.center .col-container}
 
@@ -243,7 +247,7 @@ People will use weird names
 
 $\rightarrow$ Importing data via IDs -- and comparing them -- is hard 
 
-## Regular Expressions
+## Regular expressions
 
 Regular expressions are an important part of AQL for matching node and edge labels
 
