@@ -133,4 +133,9 @@ section.has-dark-background {
 	.underline {
 		text-decoration: underline;
 	}
+
+	.slides-url {
+		text-align: center;
+		font-size: $mainFontSize*0.8;
+	}
 }

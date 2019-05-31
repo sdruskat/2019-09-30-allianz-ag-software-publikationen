@@ -76,6 +76,9 @@ $endfor$
 $if(date)$
   <p class="date">$date$</p>
 $endif$
+$if(slides-url)$
+  <p class="slides-url"><a href="$slides-url$">$slides-url$</a></p>
+$endif$
 </section>
 $endif$
 $if(toc)$

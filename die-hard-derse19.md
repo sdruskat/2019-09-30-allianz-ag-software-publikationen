@@ -5,6 +5,7 @@ author:
     - 'Thomas Krause (Humboldt-Universität zu Berlin)'
     - 'Stephan Druskat (Friedrich Schiller University Jena, German Aerospace Center (DLR))'
 theme: 'humboldt'
+slides-url: 'https://korpling.org/~thomas/die-hard-derse19.self.html'
 center: 'false'
 slideNumber: 'true'
 bibliography: 'literature.bib'

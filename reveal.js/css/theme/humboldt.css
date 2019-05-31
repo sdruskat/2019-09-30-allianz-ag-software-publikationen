@@ -316,5 +316,8 @@ body {
   font-size: 56px; }
 .reveal .underline {
   text-decoration: underline; }
+.reveal .slides-url {
+  text-align: center;
+  font-size: 22.4px; }
 
 /*# sourceMappingURL=humboldt.css.map */
