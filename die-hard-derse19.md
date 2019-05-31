@@ -20,7 +20,6 @@ mathjaxurl: "MathJax-release-2.7.4-electron/MathJax.js"
 
 - Funded under the call "Research Software Sustainability" issued by DFG under grant number GA 1288/11-1
 - Runs from October 2018 until September 2021
-[TODO check fades!]
 
 . . .
 
@@ -30,7 +29,7 @@ mathjaxurl: "MathJax-release-2.7.4-electron/MathJax.js"
 
 ## ANNIS and its query language
 
-Web browser-based search and visualization architecture for *linguistic corpora* with diverse types of *annotation*. Part of the [corpus-tools.org](http://corpus-tools.org) collection of tools for linguists. [TODO ***WHAT HAVE I SAID ABOUT CITING SOFTWARE 💀🔥🤬***]
+Web browser-based search and visualization architecture for *linguistic corpora* with diverse types of *annotation*. Part of the [corpus-tools.org](http://corpus-tools.org) collection of tools for linguists. [@Druskat2016]
 
 ::: {.center .col-container}
 
@@ -178,7 +177,7 @@ Real world: SQL
 
 - SQL versions have been standardized (..., SQL-93, SQL:1999, SQL:2003, ...)
 - Various implementations (MySQL, PostgreSQL, Oracle, DB2, SQLite, ...) with different support for the standard and vendor extensions
-- AQL has only two implementations, but the first implementation heavily relied on semantics of SQL and its [TODO their?] implementation in PostgreSQL
+- AQL has only two implementations, but the first implementation inherited semantics of SQL and its implementation in PostgreSQL
 - Problems of changing AQL implementations are similar to those in **migrating an application from one SQL implementation to another**
 
 ## Un-implemented functions of the query language
