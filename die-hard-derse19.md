@@ -77,7 +77,7 @@ Some open questions:
 - **Do we want to backward-compatible forever? Is there a “1.0 release anxiety”?**
 
 
-## Persistent Identifiers (PIDs)
+## Persistent identifiers (PIDs)
 
 
 What do I mean exactly when I refer to the “ANNIS software”?
