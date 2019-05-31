@@ -80,9 +80,22 @@ Some open questions:
 ## Persistent Identifiers (PIDs)
 
 
+What do I mean exactly when I refer to the “ANNIS software”?
 
-[![DOI](image/doi-annis.svg)](https://doi.org/10.5281/zenodo.1161400)
 
+[http://corpus-tools.org/annis](http://corpus-tools.org/annis)?
+[https://github.com/thomaskrause/ANNIS/](https://github.com/thomaskrause/ANNIS/)?
+[https://github.com/korpling/ANNIS/](https://github.com/korpling/ANNIS/)?
+Version 3.5.1? Version 4?
+
+. . .
+
+I can reference a specific software by a Digital object identifier (DOI):
+
+
+[![DOI](image/doi-annis.svg){height=50px}](https://doi.org/10.5281/zenodo.1212548)
+
+. . . 
 
 
 - In general: resolving an identifier to a resource (digital or not)
@@ -280,7 +293,7 @@ Anyone ever defined their tables this way *before* having collation issues?
 . . .
 
 ::: center
-All but 137 queries are known to give the same results in ANNIS 4 [TODO is this good or bad?]
+All but 137 queries are known to give the same results in ANNIS 4
 :::
 
 . . . 
