@@ -172,7 +172,7 @@ these bugs
 :::: {.column width=60%}
 
 
-Examples:
+Other examples:
 
 - Internet Explorer
 - Rust language “editions” for opting in into breaking-change features
@@ -228,8 +228,10 @@ Real world: SQL
 
 . . .
 
-- Move implementation of such features to a specific code path that separate the “real” query language from the ugly parts
-- Check for actual used PIDs/reference links to make it transparent if a query language feature has been used, and therefore needs emulation
+- Move implementation of such features to a specific code path that separate the 
+“real” query language from the ugly parts (quirks mode)
+- Check stored reference links to make it transparent if a query language 
+feature has actually been used, and therefore needs emulation
 
 . . . 
 
@@ -328,7 +330,7 @@ All but 137 queries are known to give the same results in ANNIS 4
 
 
 - Issues remaining
-  - Regular expressions
+  - Unsupported regular expression features
   - Unsupported binary operators (might not fix)
   - Actual bugs
 
