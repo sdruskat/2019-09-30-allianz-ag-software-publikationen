@@ -160,18 +160,29 @@ Solution 1: Keep the old software running forever (in parallel to the new one)
 
 . . . 
 
-:::  center
+::: {.center .col-container}
+
+::: col
 
 Remember me?
 
-![](image/Internet_Explorer_6_Windows_XP.png)
+![](image/IE6.png)
 
 :::
+
+
+::: col
+
 
 - We need a quirks mode emulating old behavior like, e.g.,
   - Internet Explorer
   - Rust Editions ([https://doc.rust-lang.org/book/appendix-05-editions.html](https://doc.rust-lang.org/book/appendix-05-editions.html))
 
+
+
+:::
+
+:::
 
 # Selected problems from the migration process
 
