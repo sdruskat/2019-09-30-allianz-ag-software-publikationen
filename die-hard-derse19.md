@@ -36,21 +36,23 @@ with diverse types of *annotation*.
 Part of the [corpus-tools.org](http://corpus-tools.org) collection of tools for 
 linguists. [@Druskat2016]
 
-::: {.center .col-container}
+::: {.columns}
 
-::: col
+::: {.column width=45%}
 
 ![](image/annis3_full.png){width=100%}
 
 :::
 
-::: col
+::: {.column width=55%}
 
-- Annotations are structured information added to text represented as a **graph with labels**
+- Annotations are structured information added to text represented as a 
+**graph with labels**
 - Used by expert users (linguists) to **find and analyze linguistic phenomena**
-- ANNIS allows finding annotations and *combinations* of annotations with its domain specific query language AQL:
-  describes **nodes labels** and **joins them with operators**
-- Each query returns a set of results for further automatic/manual analysis
+- ANNIS allows finding annotations and *combinations* of annotations with its 
+domain specific query language AQL
+- AQL describes **nodes labels** and **joins them with operators**, which constrain 
+the relation of the nodes in the graph
 :::
 
 
@@ -156,33 +158,41 @@ Solution 1: Keep the old software running forever (in parallel to the new one)
 ## Query language incompatibility is a feature
 
 - New version will remove some query language functions and fix bugs in the query execution
-- Backward compatibility means replicating these bugs
+- Backward compatibility means supporting old features or even replicating 
+these bugs
 
 . . . 
 
-::: {.center .col-container}
+- We need a *quirks mode* emulating old behavior
 
-::: col
+. . . 
 
-Remember me?
+::::: {.columns}
 
-![](image/IE6.png)
-
-:::
+:::: {.column width=60%}
 
 
-::: col
+Examples:
+
+- Internet Explorer
+- Rust Editions for opting in into breaking-change language features
 
 
-- We need a quirks mode emulating old behavior like, e.g.,
-  - Internet Explorer
-  - Rust Editions ([https://doc.rust-lang.org/book/appendix-05-editions.html](https://doc.rust-lang.org/book/appendix-05-editions.html))
+“[...] we have a commitment to not breaking users’ code. There will not be a Rust 2.0.” - Steve Klabnik ([https://news.ycombinator.com/item?id=19638000](https://news.ycombinator.com/item?id=19638000))
+
+::::
 
 
+:::: {.column width=40%}
 
-:::
 
-:::
+![](image/IE6.png){width=100%}
+
+
+::::
+
+
+:::::
 
 # Selected problems from the migration process
 
