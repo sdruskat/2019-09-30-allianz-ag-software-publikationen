@@ -131,9 +131,11 @@ Some open questions:
 Problem:
 
 - ANNIS 3: AQL queries are mapped to SQL queries and executed by PostgreSQL
-- ANNIS 4: custom in-memory graph-based search engine written in Rust, which directly executes AQL [@Krause2019]
+- ANNIS 4: custom in-memory graph-based search engine written in Rust, which 
+directly executes AQL [@Krause2019]
 
-All old reference links should still work.
+All old reference links should still work because the query results are part of 
+the research results.
 
 . . . 
 
