@@ -175,10 +175,11 @@ these bugs
 Examples:
 
 - Internet Explorer
-- Rust Editions for opting in into breaking-change language features
+- Rust language “editions” for opting in into breaking-change features
 
 
-“[...] we have a commitment to not breaking users’ code. There will not be a Rust 2.0.” - Steve Klabnik ([https://news.ycombinator.com/item?id=19638000](https://news.ycombinator.com/item?id=19638000))
+“We can’t get rid of it because we have a commitment to not breaking users’ code. 
+There will not be a Rust 2.0.” - Steve Klabnik ([https://news.ycombinator.com/item?id=19638000](https://news.ycombinator.com/item?id=19638000))
 
 ::::
 
