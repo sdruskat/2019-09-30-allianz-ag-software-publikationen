@@ -9,7 +9,7 @@ center: 'false'
 slideNumber: 'true'
 bibliography: 'literature.bib'
 link-citations: no
-mathjaxurl: "MathJax-release-2.7.4-electron/MathJax.js"
+mathjaxurl: 'mathjax/MathJax.js'
 ---
 
 # Background
