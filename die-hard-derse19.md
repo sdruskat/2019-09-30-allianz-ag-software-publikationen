@@ -118,7 +118,7 @@ Some open questions:
 
 # Achieving backward compatibility in ANNIS 4
 
-## What is the digital object defined by ANNIS citation links?
+## ANNIS reference links
 
 - ANNIS allows generating short links to query results and single matches, e.g.,
 [https://korpling.org/annis3/?id=813c3146-2d10-4d0c-8a1f-1b5efc3c051a](https://korpling.org/annis3/?id=813c3146-2d10-4d0c-8a1f-1b5efc3c051a)
