@@ -285,7 +285,7 @@ SELECT * FROM t WHERE a ~ 'val.*';
 -- MySQL 
 SELECT * FROM t WHERE a REGEXP 'val.*';
 ```
-- Syntax varies from each implementation, even if „supporting POSIX“
+- Syntax varies from each implementation, even if “supporting POSIX”
 - Regular expression engines often allow a search for non-regular expressions, such as backreferences and other extensions: some implementations trade features for speed (e.g RE2 from Google)
 - “Power users“ will use all regular features available, even if never officially documented
 
