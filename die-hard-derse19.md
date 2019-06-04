@@ -203,7 +203,7 @@ There will not be a Rust 2.0.” - Steve Klabnik ([https://news.ycombinator.com/
 - In an ideal world a query language is formally defined like Datalog [@Ceri1989]
     - Strictly based on predicate logic
     - Declaration of so-called facts and rules how to infer new facts 
-- All you need to restore a digital object would be the data and any implementation conforming to the specification
+- All you need to restore a digital object would be the data and any implementation of the query language conforming to the specification
 
 . . . 
 
@@ -246,7 +246,7 @@ feature has actually been used, and therefore needs emulation
 
 ## Identifiers might change
 
-- Each node in the graph has a URI and an internal identfier
+- Each node in the graph has a URI as an internal identfier
 - Matches are lists of URIs and additional names for the label the match refers to
 - A match for a query is only the same if all URIs are the same
 
