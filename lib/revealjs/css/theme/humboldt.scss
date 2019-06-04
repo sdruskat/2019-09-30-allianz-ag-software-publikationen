@@ -4,6 +4,7 @@
  * By Hakim El Hattab, http://hakim.se
  */
 
+@import "../../../../slide-style-params";
 
 // Default mixins and settings -----------------
 @import "template/mixins";
@@ -96,9 +97,9 @@ section.has-dark-background {
 
 
 	#title-slide {
-		background-image: url(../../../image/logo.png);
+		background-image: url(../../../../../image/logo.png);
 		background-repeat: no-repeat;
-		background-size: 100px 317px;
+		background-size: $logoWidth $logoHeight;
 		background-position: right 0px top 0px;
 	}
 
