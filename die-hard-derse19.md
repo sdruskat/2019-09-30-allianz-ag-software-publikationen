@@ -201,7 +201,7 @@ There will not be a Rust 2.0.” - Steve Klabnik ([https://news.ycombinator.com/
 ## Formalized semantics of the data model and the query language
 
 - In an ideal world a query language is formally defined like Datalog [@Ceri1989]
-    - Based on predicate logic
+    - Strictly based on predicate logic
     - Declaration of so-called facts and rules how to infer new facts 
 - All you need to restore a digital object would be the data and any implementation conforming to the specification
 
