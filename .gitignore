@@ -2,3 +2,6 @@
 /die-hard-derse19.html
 *.bib.bak
 *.bib.sav
+/venv
+/node_env
+/node_modules

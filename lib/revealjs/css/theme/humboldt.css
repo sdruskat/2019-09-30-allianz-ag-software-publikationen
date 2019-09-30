@@ -17,7 +17,7 @@ body {
 
 .reveal {
   font-family: "Junicode", "Times New Roman", serif;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: normal;
   color: #222; }
 
@@ -56,13 +56,13 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 2.5em; }
+  font-size: 1.8em; }
 
 .reveal h2 {
-  font-size: 1.6em; }
+  font-size: 1.5em; }
 
 .reveal h3 {
-  font-size: 1.3em; }
+  font-size: 1.2em; }
 
 .reveal h4 {
   font-size: 1em; }
@@ -292,7 +292,7 @@ body {
 .reveal code {
   font-family: 'Source Code Pro', monospace; }
 .reveal pre {
-  font-size: 28px; }
+  font-size: 32px; }
 .reveal .center {
   text-align: center; }
 .reveal #title-slide {
@@ -305,15 +305,15 @@ body {
 .reveal .alert {
   color: #fb3f3e; }
 .reveal .small {
-  font-size: 22.4px; }
+  font-size: 25.6px; }
 .reveal .large {
-  font-size: 42px; }
+  font-size: 48px; }
 .reveal .huge {
-  font-size: 56px; }
+  font-size: 64px; }
 .reveal .underline {
   text-decoration: underline; }
 .reveal .slides-url {
   text-align: center;
-  font-size: 22.4px; }
+  font-size: 25.6px; }
 
 /*# sourceMappingURL=humboldt.css.map */
