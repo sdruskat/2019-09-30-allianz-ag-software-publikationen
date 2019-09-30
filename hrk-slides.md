@@ -178,11 +178,13 @@ Nein
 ::: {.column width="50%"}
 
 - Journal of Open Source Software (JOSS) / Software Journals?
+- GitHub/GitLab? bzw. Git
 - Zenodo
   - DOI für Versionen
   - DOI für "Konzept"
   - Metadaten?
   - Peer Review?
+- [Software Heritage](https://archive.softwareheritage.org)?
 
 :::
 ::: {.column width="50%"}
