@@ -28,6 +28,7 @@ aspectratio: 169
 - Software [*d*]
 - technische Berichte (Annotationshandbücher, etc.) [*a/d*]
 - Digitalisate (z.B. von Handschriften) [*d*]
+- Email-Listen (z.B. Linguist List)
 
 allgemein nativ [*a*]nalog / nativ [*d*]igital
 
